@@ -59,7 +59,9 @@ When prompted, type `yes` to confirm the destruction. Be cautious, as this actio
 
 ## Contributions
 
-Note all the commands used to configure the servers. I will require them after to automate them via Ansible. Keep track of all tasks via Project Issues.  
+Note all the commands used to configure the servers. I will require them after to automate them via Ansible. 
+
+Keep track of all tasks you work on via Project Issues.  
 
 Lastly, have fun, leave easter eggs :)
 
