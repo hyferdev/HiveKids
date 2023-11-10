@@ -1,8 +1,8 @@
 # Security group for CICD instance
-resource "aws_security_group" "ansible_sg" {
+resource "aws_security_group" "HiveKids_sg" {
   description = "Allow SSH and Web traffic"
-  name        = "ansible-sg"
-  vpc_id      = aws_vpc.ansible_vpc.id
+  name        = "HiveKids-sg"
+  vpc_id      = aws_vpc.HiveKids_vpc.id
 
   ingress {
     description = "Allow SSH from any IP"
@@ -12,6 +12,7 @@ resource "aws_security_group" "ansible_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  /*
   ingress {
     from_port   = 80
     to_port     = 80
@@ -25,6 +26,7 @@ resource "aws_security_group" "ansible_sg" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  */
 
   egress {
     description = "Allows all outbound traffic"

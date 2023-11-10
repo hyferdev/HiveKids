@@ -1,11 +1,13 @@
 # Terraform cloud configs
 terraform {
+  /*
   cloud {
       organization = "hyfer"
       workspaces {
-        name = "Ansible"
+        name = "HiveKids"
       }
   }
+  */
 
   required_providers {
     aws = {
